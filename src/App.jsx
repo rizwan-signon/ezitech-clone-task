@@ -4,6 +4,7 @@ import Courses from "./components/Courses";
 import Internship from "./components/Internship";
 
 import Information from "./components/Information";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const App = () => {
       <Courses />
       <Internship />
       <Information />
+      <Footer />
     </div>
   );
 };
