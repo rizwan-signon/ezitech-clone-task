@@ -16,7 +16,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const handleShow = () => {
     setShow((show) => !show);
   };
