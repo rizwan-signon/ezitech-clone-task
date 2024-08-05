@@ -61,37 +61,42 @@ const Navbar = () => {
             <h1 className=" font-bold leading-none">EZITECH</h1>
             <h1>INSTITUTE</h1>
           </div>
-          {show ? (
-            <GiHamburgerMenu
+          <div className="flex items-center gap-6">
+            <button
+              className="text-white text-4xl sm:hidden"
               onClick={handleShow}
-              className="text-white text-4xl"
-            />
-          ) : (
-            <>
-              <ul
-                className={`${
-                  show
-                    ? `absolute mt-10 mr-10 rounded-lg`
-                    : "flex items-center gap-6 text-white uppercase"
-                }`}
-              >
-                <li>Home</li>
-                <li>AboutUs</li>
-                <li>Certification</li>
-                <li>Careers</li>
-                <li>Seminars</li>
-                <li>Tech Blogs</li>
-                <li>IPORTAL LOGIN</li>
-              </ul>
-              <div className="flex items-center gap-6 text-white">
-                <p>|</p>
-                <CiHeart className="font-bold" />
-                <button className=" border border-white py-2 px-2">
-                  <CiSearch />
-                </button>
-              </div>
-            </>
-          )}
+            >
+              <GiHamburgerMenu />
+            </button>
+            <ul
+              className={`${
+                show ? "block" : "hidden"
+              } absolute top-full right-2 bg-blue-600 text-white mt-2 py-2 px-4 rounded-lg sm:static sm:flex sm:items-center sm:bg-transparent sm:gap-6 sm:text-white`}
+            >
+              <li className="py-1 hover:bg-blue-700 cursor-pointer">Home</li>
+              <li className="py-1 hover:bg-blue-700 cursor-pointer">AboutUs</li>
+              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+                Certification
+              </li>
+              <li className="py-1 hover:bg-blue-700 cursor-pointer">Careers</li>
+              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+                Seminars
+              </li>
+              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+                Tech Blogs
+              </li>
+              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+                IPORTAL LOGIN
+              </li>
+            </ul>
+            <div className="hidden sm:flex items-center gap-6 text-white">
+              <p>|</p>
+              <CiHeart className="font-bold" />
+              <button className="border border-white py-2 px-2">
+                <CiSearch />
+              </button>
+            </div>
+          </div>
         </section>
       </div>
     </header>
