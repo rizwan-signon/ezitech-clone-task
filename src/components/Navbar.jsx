@@ -6,6 +6,8 @@ import {
   FaYoutube,
   FaLinkedin,
 } from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { CiSearch } from "react-icons/ci";
@@ -66,26 +68,32 @@ const Navbar = () => {
               className="text-white text-4xl sm:hidden"
               onClick={handleShow}
             >
-              <GiHamburgerMenu />
+              {show ? <IoMdCloseCircle /> : <GiHamburgerMenu />}
             </button>
             <ul
               className={`${
                 show ? "block" : "hidden"
               } absolute top-full right-2 bg-blue-600 text-white mt-2 py-2 px-4 rounded-lg sm:static sm:flex sm:items-center sm:bg-transparent sm:gap-6 sm:text-white`}
             >
-              <li className="py-1 hover:bg-blue-700 cursor-pointer">Home</li>
-              <li className="py-1 hover:bg-blue-700 cursor-pointer">AboutUs</li>
-              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+              <li className="py-1 px-2 rounded-lg hover:bg-blue-700 cursor-pointer">
+                Home
+              </li>
+              <li className="py-1 px-2 rounded-lg hover:bg-blue-700 cursor-pointer">
+                AboutUs
+              </li>
+              <li className="py-1 px-2 rounded-lg hover:bg-blue-700 cursor-pointer">
                 Certification
               </li>
-              <li className="py-1 hover:bg-blue-700 cursor-pointer">Careers</li>
-              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+              <li className="py-1 px-2 rounded-lg hover:bg-blue-700 cursor-pointer">
+                Careers
+              </li>
+              <li className="py-1 px-2 rounded-lg hover:bg-blue-700 cursor-pointer">
                 Seminars
               </li>
-              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+              <li className="py-1 px-2 rounded-lg hover:bg-blue-700 cursor-pointer">
                 Tech Blogs
               </li>
-              <li className="py-1 hover:bg-blue-700 cursor-pointer">
+              <li className="py-1 px-2 rounded-lg hover:bg-blue-700 cursor-pointer">
                 IPORTAL LOGIN
               </li>
             </ul>
