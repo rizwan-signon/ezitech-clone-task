@@ -1,6 +1,6 @@
 import macBook from "../assets/Images/macbook.png";
 import image from "../assets/Images/wallpaper.jpg";
-import logo from "../assets/Images/img-3.jpg";
+import logo from "../assets/Images/hero.jpg";
 import {
   FaPhone,
   FaInstagramSquare,
@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <section className="" style={{ backgroundImage: `url(${logo})` }}>
+    <section className="text-white" style={{ backgroundImage: `url(${logo})` }}>
       <div className="max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto">
           <h1 className="max-w-3xl mx-auto text-center text-5xl font-bold py-10">
@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div className=" grid sm:grid-cols-3 grid-cols-1 gap-20 mt-20 max-w-6xl mx-auto">
           <div>
-            <h1 className="uppercase text-4xl my-3 font-bold text-center sm:text-start text-blue-700">
+            <h1 className="uppercase text-4xl  font-bold text-center sm:text-start text-white">
               about
             </h1>
             <p className="text-xl font-medium text-white">
@@ -32,7 +32,7 @@ const Footer = () => {
             </p>
           </div>
           <div className=" flex flex-col gap-10 grid-cols-subgrid">
-            <h1 className="text-blue-700 text-center sm:text-start uppercase text-4xl font-bold">
+            <h1 className="text-white text-center sm:text-start uppercase text-4xl font-bold truncate">
               pupolar courses
             </h1>
             <div className="flex items-center gap-2">
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-blue-700 text-4xl font-bold uppercase text-center sm:text-start">
+            <h1 className="text-white text-4xl font-bold uppercase text-center sm:text-start">
               Blogs
             </h1>
             <ul className=" list-disc text-white">
